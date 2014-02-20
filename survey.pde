@@ -31,7 +31,8 @@ void drawCircles(int[] numbers) {
     float x = map(i,0,numbers.length,100,width - 100);
     float y = height- (height/5);
     float d = map(n,0,sqrt(10),0,sqrt(300));
-    fill(#ff6600,150);
+//    fill(#ff6600,150);
+    fill(2*x,5*d,8*d, 55);
     noStroke();
     triangle(x,y,d,y,(x+d)/2, height/5);
 //    ellipse(x,y,d,d);
