@@ -29,11 +29,11 @@ void drawCircles(int[] numbers) {
   for(int i = 0; i < numbers.length; i++) {
     int n = numbers[i];
     float x = map(i,0,numbers.length,100,width - 100);
-    float y = height/2;
+    float y = height- (height/5);
     float d = map(n,0,sqrt(10),0,sqrt(300));
     fill(#ff6600,150);
     noStroke();
-    triangle(x,y,d,y,(x+d)/2, d);
+    triangle(x,y,d,y,(x+d)/2, height/5);
 //    ellipse(x,y,d,d);
   }
 }
